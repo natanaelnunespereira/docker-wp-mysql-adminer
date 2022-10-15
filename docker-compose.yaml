@@ -1,6 +1,0 @@
-version: "1"
-services:
-  wordpress:
-    image: wordpress:6.0.2
-    ports:
-    - "8080:80"
