@@ -1,0 +1,16 @@
+version: "2.0"
+services:
+  mysql:
+    image: mysql:8.0.31
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=qwe123
+      - MYSQL_USER=wordpress
+      - MYSQL_PASSWORD=wp123
+      - MYSQL_DATABASE=wordpress
+  
+  wordpress:
+    image: wordpress:6.0.2
+    ports:
+      - "8080:80"
