@@ -7,4 +7,8 @@
 
 ## Ambientação da aplicação
 
-Após o processo de instalação citados acima é realizado a aplicação do arquivo **docker-compose.yml** 
+Após o processo de instalação citados acima, é realizado a aplicação do arquivo **docker-compose.yml**.    
+
+Para subir a aplicação digite o comando: `# docker-compose up -d`.  
+Para verificar a criação digite o comando: `# docker-compose ps`.  
+Caso queira atestar a criação dos containers, digite o comando `# docker container ls`.  
