@@ -1,14 +1,6 @@
-version: '3.0'
+version: '3.1'
 
 services:
-  wordpress:
-    restart: always
-    image: wordpress:6.0.2
-    ports:
-      - 8080:80
-    volumes:
-      - db-wordpress:/var/www/html
-
   mysql:
     image: mysql:8.0.31
     restart: always
@@ -21,6 +13,18 @@ services:
       MYSQL_ROOT_PASSWORD: usr123
     volumes:
       - db-mysql:/var/lib/mysql
+    
+  wordpress:
+    restart: always
+    image: wordpress:6.0.2
+    ports:
+      - 8080:80
+    environment:
+      WORDPRESS_DB_HOST: mysql:3306
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: usr123
+    volumes:
+      - db-wordpress:/var/www/html
 
   adminer:
     image: adminer
