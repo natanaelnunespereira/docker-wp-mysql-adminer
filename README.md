@@ -14,7 +14,7 @@ Após os processos de instalação citados, é realizado a aplicação do arquiv
 
 Subir a aplicação: `# docker-compose up -d`.  
 Verificar a criação do compose: `# docker-compose ps`.  
-Averiguar os logs do compose: `# docker-compose logs -f`  
+Averiguar os logs do compose: `# docker-compose logs -f`.  
 Atestar a criação dos containers: `# docker container ls`.  
 Verificar a criação dos volumes: `# docker volume ls`.  
 Interromper e remover os containers criados pelo compose: `# docker-compose down`.
