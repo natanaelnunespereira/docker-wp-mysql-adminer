@@ -21,6 +21,12 @@ Interromper e remover os containers criados pelo compose: `# docker-compose down
 
 ## Processo de mudança de nome do domínio "localhost"
 
-O principal uso deste tipo de domínio é para testes de *websites* antes da propagação dos DNSs na *web*. Segue processo:  
-Navegação ao diretório: `# cd C:\WINDOWS\system32\drivers\etc\`.  
-Basta atribuir uma nova linha no arquivo **hosts** contendo o IP do *host* e o nome do domínio.  
+O principal uso deste tipo de domínio é para testes de *websites* antes da propagação dos DNSs na *web*. Abaixo segue o processo:  
+
+### Windows
+Navegar ao diretório: `# cd C:\WINDOWS\system32\drivers\etc\`.  
+Atribuir uma nova linha no arquivo **hosts** contendo o IP do *host* e o nome do domínio.  
+
+### Linux
+Alterar o arquivo: `# vim /etc/hosts`.  
+Atribuir uma nova linha no arquivo contendo o IP do *host* e o nome do domínio.
