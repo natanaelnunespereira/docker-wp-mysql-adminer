@@ -1,8 +1,9 @@
-version: '3.1'
+version: '3.2'
 
 services:
   mysql:
     image: mysql:8.0.31
+    container_name: docker_compose_mysql
     restart: always
     ports:
       - 3306:3306
@@ -15,8 +16,9 @@ services:
       - db-mysql:/var/lib/mysql
     
   wordpress:
-    restart: always
     image: wordpress:6.0.2
+    container_name: docker_compose_wordpress
+    restart: always
     ports:
       - 8080:80
     environment:
@@ -28,6 +30,7 @@ services:
 
   adminer:
     image: adminer
+    container_name: docker_compose_adminer
     ports:
       - 4040:8080
 
