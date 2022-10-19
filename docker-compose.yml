@@ -29,6 +29,7 @@ services:
       WORDPRESS_DB_HOST: mysql:3306
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: usr123
+      WORDPRESS_DB_NAME: wordpress
     volumes:
       - db-wordpress:/var/www/html
 
