@@ -10,7 +10,7 @@ O Docker Compose é uma ferramenta desenvolvida para auxiliar a definição e co
 
 ## Ambientação da aplicação
 
-Após os processos de instalação citados, é realizada a aplicação do arquivo [docker-compose.yml](./docker-compose.yml). Esse arquivo define os serviços WordPress e MySQL. Abaixo constam alguns comandos utilizados ao decorrer do processo.    
+Após os processos de instalação citados, é realizada a aplicação do arquivo [docker-compose.yml](./docker-compose.yml). Esse arquivo define os serviços WordPress, MySQL e Adminer. Abaixo constam alguns comandos utilizados ao decorrer do processo.    
 
 - Subir a aplicação: `# docker-compose up -d`.
 - Verificar a criação do compose: `# docker-compose ps`.
