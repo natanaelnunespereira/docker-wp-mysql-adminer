@@ -8,7 +8,7 @@ services:
     ports:
       - 3306:3306
     env_file:
-      - ./DB/.env
+      - ./var/DB/.env
     volumes:
       - db-mysql:/var/lib/mysql
     
@@ -21,7 +21,7 @@ services:
     ports:
       - 8080:80
     env_file:
-      - ./WP/.env
+      - ./var/WP/.env
     volumes:
       - db-wordpress:/var/www/html
 
