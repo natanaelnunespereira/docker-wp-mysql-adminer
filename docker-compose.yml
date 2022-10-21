@@ -7,12 +7,8 @@ services:
     restart: always
     ports:
       - 3306:3306
-    environment:
-      TZ: America/Sao_Paulo 
-      MYSQL_ROOT_PASSWORD: qwe123
-      MYSQL_DATABASE: wordpress
-      MYSQL_USER: wordpress
-      MYSQL_PASSWORD: usr123
+    env_file:
+      - ./DB/.env
     volumes:
       - db-mysql:/var/lib/mysql
     
@@ -24,12 +20,8 @@ services:
       - mysql
     ports:
       - 8080:80
-    environment:
-      TZ: America/Sao_Paulo 
-      WORDPRESS_DB_HOST: mysql:3306
-      WORDPRESS_DB_USER: wordpress
-      WORDPRESS_DB_PASSWORD: usr123
-      WORDPRESS_DB_NAME: wordpress
+    env_file:
+      - ./WP/.env
     volumes:
       - db-wordpress:/var/www/html
 
